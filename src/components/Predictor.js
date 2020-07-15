@@ -9,40 +9,57 @@ const Predictor = () => {
 
     const handleSubmit = (event)=>{
         event.preventDefault();
+        plateLastDigit();
+        
     }
+
+    const plateLastDigit = ()=>{
+     let fullPlate = plateNumber.split("");
+     let lastDigit = fullPlate.pop();
+     return setplateNumber(lastDigit);
+    }
+
+    
+     console.log("numero de matricula:" , plateNumber , " fecha" , date , " hour ", hour);
 
   return (
     <div className="mt-4">
       <h4>Please enter the inputs required</h4>
       <form onSubmit={handleSubmit}>
         <div className="form-group mt-4">
-          <label for="email">Plate number:</label>
+          <label>Plate number:</label>
           <input
-            type="email"
-            class="form-control"
+            type="text"
+            className="form-control"
             placeholder="Enter your plate number"
-            id="email"
+            id="plateNumber"
+            name={plateNumber}
+            onChange={(event)=> setplateNumber(event.target.value)}
           />
         </div>
         <div className="form-group">
-          <label for="email">Date:</label>
+          <label>Date:</label>
           <input
-            type="email"
-            class="form-control"
+            type="date"
+            className="form-control"
             placeholder="Enter the date"
-            id="email"
+            id="date"
+            name={date}
+            onChange={(event)=> setDate(event.target.value)}
           />
         </div>
         <div className="form-group">
-          <label for="email">Hour:</label>
+          <label>Hour:</label>
           <input
-            type="email"
-            class="form-control"
+            type="text"
+            className="form-control"
             placeholder="Enter an hour"
-            id="email"
+            id="hour"
+            name={hour}
+            onChange={(event)=> setHour(event.target.value)}
           />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary">Submit</button>
       </form>
     </div>
   );
