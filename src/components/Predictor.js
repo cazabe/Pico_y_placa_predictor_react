@@ -12,7 +12,13 @@ const Predictor = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (plateNumber !== "" && date !== "" && hour !== "") {
+    if (
+      plateNumber !== "" &&
+      date !== "" &&
+      hour !== "" &&
+      document.getElementById("plateNumber").value !== "" &&
+      document.getElementById("hour").value !== ""
+    ) {
       plateLastDigit();
       extracDay();
       setHour(hour);
@@ -40,16 +46,16 @@ const Predictor = () => {
   };
 
   const cleanData = () => {
-    setplateNumber("");
-    setDate("");
-    setHour("");
+    document.getElementById("plateNumber").value = "";
+    document.getElementById("hour").value = "";
+    document.getElementById("date").value = "";
     setcallToRender(false);
   };
 
   const conditionalResponse = () => {
     if (
-      hour === "7:00" ||
-      hour === "9:30" ||
+      hour === "07:00" ||
+      hour === "09:30" ||
       hour === "16:00" ||
       hour === "19:30"
     ) {
@@ -97,7 +103,7 @@ const Predictor = () => {
     if (callToRender) {
       setTimeout(() => {
         conditionalResponse();
-      }, 1000);
+      }, 800);
     }
   });
 
@@ -106,7 +112,7 @@ const Predictor = () => {
       <h4>Please enter the inputs required</h4>
       <div className="row col-md-12">
         <div className="col-md-6">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-group mt-4">
               <label>Plate number:</label>
               <input
@@ -135,26 +141,25 @@ const Predictor = () => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter an hour like 7:00"
+                placeholder="Enter an hour like 07:00"
                 id="hour"
                 name={hour}
+                maxLength="5"
+                pattern="^\d{2}:\d{2}$"
+                title="You must use a time format like this 7:00"
                 onChange={(event) => setHour(event.target.value)}
               />
             </div>
             <div className="row pl-3">
               <div className="form-group">
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  onClick={handleSubmit}
-                >
+                <button type="submit" className="btn btn-primary">
                   Submit
                 </button>
               </div>
 
               <div className="form-group ">
                 <button
-                  type="submit"
+                  type="button"
                   className="btn btn-danger ml-3"
                   onClick={cleanData}
                 >
@@ -164,19 +169,19 @@ const Predictor = () => {
             </div>
           </form>
           {callToRender ? (
-          <Alert className="event-validation" color="warning">
-            <div id="response"></div>
-          </Alert>
-        ) : (
-          ""
-        )}
-        {error ? (
-          <Alert className="event-validation" color="danger">
-            {errorMessage}
-          </Alert>
-        ) : (
-          ""
-        )}
+            <Alert className="event-validation" color="warning">
+              <div id="response"></div>
+            </Alert>
+          ) : (
+            ""
+          )}
+          {error ? (
+            <Alert className="event-validation" color="danger">
+              {errorMessage}
+            </Alert>
+          ) : (
+            ""
+          )}
         </div>
         <div className="col-md-6">
           <img
