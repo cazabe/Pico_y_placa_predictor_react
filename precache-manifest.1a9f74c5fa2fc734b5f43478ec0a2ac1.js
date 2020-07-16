@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f66bf86639f33250bbd728654b2aa4a8",
+    "revision": "ded20682b37c2b934e9dd50dc44f17b1",
     "url": "/Pico_y_placa_predictor_react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Pico_y_placa_predictor_react/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "1030c0b02bae90b1103c",
+    "revision": "747e8dcc5a89bb9de772",
     "url": "/Pico_y_placa_predictor_react/static/css/main.5facb584.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Pico_y_placa_predictor_react/static/js/2.dbdf4a00.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1030c0b02bae90b1103c",
-    "url": "/Pico_y_placa_predictor_react/static/js/main.0d012b48.chunk.js"
+    "revision": "747e8dcc5a89bb9de772",
+    "url": "/Pico_y_placa_predictor_react/static/js/main.d7b6cce9.chunk.js"
   },
   {
     "revision": "10f357dc9526ab492bfb",

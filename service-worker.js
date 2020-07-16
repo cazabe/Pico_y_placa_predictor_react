@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Pico_y_placa_predictor_react/precache-manifest.1ce58af81cee58220aee8a8b9a25650e.js"
+  "/Pico_y_placa_predictor_react/precache-manifest.1a9f74c5fa2fc734b5f43478ec0a2ac1.js"
 );
 
 self.addEventListener('message', (event) => {
