@@ -25,7 +25,7 @@ const Predictor = () => {
       setcallToRender(true);
     } else {
       setError(true);
-      setErrorMessage("You must field all inputs");
+      setErrorMessage("You must fiell all inputs");
       setTimeout(() => {
         setError(false);
         setErrorMessage("");
