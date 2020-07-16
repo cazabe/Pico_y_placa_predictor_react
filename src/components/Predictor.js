@@ -25,7 +25,7 @@ const Predictor = () => {
       setcallToRender(true);
     } else {
       setError(true);
-      setErrorMessage("You must fiell all inputs");
+      setErrorMessage("You must fill all inputs");
       setTimeout(() => {
         setError(false);
         setErrorMessage("");
@@ -114,7 +114,7 @@ const Predictor = () => {
         <div className="col-md-6">
           <form onSubmit={handleSubmit}>
             <div className="form-group mt-4">
-              <label>Plate number:</label>
+              <label>* Plate number:</label>
               <input
                 type="text"
                 className="form-control"
@@ -126,7 +126,7 @@ const Predictor = () => {
               />
             </div>
             <div className="form-group">
-              <label>Date:</label>
+              <label>* Date:</label>
               <input
                 type="date"
                 className="form-control"
@@ -137,7 +137,7 @@ const Predictor = () => {
               />
             </div>
             <div className="form-group">
-              <label>Hour:</label>
+              <label>* Hour:</label>
               <input
                 type="text"
                 className="form-control"
@@ -146,7 +146,7 @@ const Predictor = () => {
                 name={hour}
                 maxLength="5"
                 pattern="^\d{2}:\d{2}$"
-                title="You must use a time format like this 7:00"
+                title="You must use a time format like this 07:00"
                 onChange={(event) => setHour(event.target.value)}
               />
             </div>
