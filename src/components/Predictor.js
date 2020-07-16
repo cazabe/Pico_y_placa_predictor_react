@@ -26,9 +26,16 @@ const Predictor = () => {
     const extracDay = ()=>{
         let dt = new Date(date);
         let day = dt.getDay();
-        return setDate(day);
-        
+        return setDate(day); 
     }
+
+    const cleanData = ()=>{
+      setplateNumber("");
+      setDate("");
+      setHour("");
+      setcallToRender(false)
+    }
+
     console.log("numero de matricula:" , plateNumber , " fecha" , date , " hour ", hour);
 
     const conditionalResponse = ()=>{
@@ -68,7 +75,7 @@ const Predictor = () => {
           <label>Plate number:</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control col-md-6"
             placeholder="Enter your plate number like GXA-0103"
             maxLength="8"
             id="plateNumber"
@@ -80,7 +87,7 @@ const Predictor = () => {
           <label>Date:</label>
           <input
             type="date"
-            className="form-control"
+            className="form-control col-md-6"
             placeholder="Enter the date"
             id="date"
             name={date}
@@ -91,14 +98,23 @@ const Predictor = () => {
           <label>Hour:</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control col-md-6"
             placeholder="Enter an hour like 7:00"
             id="hour"
             name={hour}
             onChange={(event)=> setHour(event.target.value)}
           />
         </div>
+        <div className="row">
+        <div className="form-group">
         <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Submit</button>
+        </div>
+
+        <div className="form-group ml-3">
+        <button type="submit" className="btn btn-danger" onClick={cleanData}>Try again</button>
+        </div>
+        </div>
+
         <div id="response"></div>
       </form>
     </div>
