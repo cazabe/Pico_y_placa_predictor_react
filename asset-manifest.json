@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Pico_y_placa_predictor_react/static/css/main.5facb584.chunk.css",
+    "main.js": "/Pico_y_placa_predictor_react/static/js/main.0d012b48.chunk.js",
+    "main.js.map": "/Pico_y_placa_predictor_react/static/js/main.0d012b48.chunk.js.map",
+    "runtime-main.js": "/Pico_y_placa_predictor_react/static/js/runtime-main.efe5da0b.js",
+    "runtime-main.js.map": "/Pico_y_placa_predictor_react/static/js/runtime-main.efe5da0b.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Pico_y_placa_predictor_react/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.dbdf4a00.chunk.js": "/Pico_y_placa_predictor_react/static/js/2.dbdf4a00.chunk.js",
+    "static/js/2.dbdf4a00.chunk.js.map": "/Pico_y_placa_predictor_react/static/js/2.dbdf4a00.chunk.js.map",
+    "index.html": "/Pico_y_placa_predictor_react/index.html",
+    "precache-manifest.1ce58af81cee58220aee8a8b9a25650e.js": "/Pico_y_placa_predictor_react/precache-manifest.1ce58af81cee58220aee8a8b9a25650e.js",
+    "service-worker.js": "/Pico_y_placa_predictor_react/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Pico_y_placa_predictor_react/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.5facb584.chunk.css.map": "/Pico_y_placa_predictor_react/static/css/main.5facb584.chunk.css.map",
+    "static/js/2.dbdf4a00.chunk.js.LICENSE.txt": "/Pico_y_placa_predictor_react/static/js/2.dbdf4a00.chunk.js.LICENSE.txt",
+    "static/media/trafficPicture.jpg": "/Pico_y_placa_predictor_react/static/media/trafficPicture.2979a2a3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efe5da0b.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.dbdf4a00.chunk.js",
+    "static/css/main.5facb584.chunk.css",
+    "static/js/main.0d012b48.chunk.js"
+  ]
+}
