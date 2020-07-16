@@ -36,10 +36,9 @@ const Predictor = () => {
       setcallToRender(false)
     }
 
-    console.log("numero de matricula:" , plateNumber , " fecha" , date , " hour ", hour);
 
     const conditionalResponse = ()=>{
-      console.log("Dentro de la funcion conditionalResponse: ", plateNumber, " ", date, "",hour);
+     
       if(hour === "7:00" || hour === "9:30" || hour === "16:00" || hour === "19:30" ){
         if(plateNumber === "1" && date === 0 || plateNumber === "2" && date === 0 ){
           return document.getElementById("response").innerHTML = "Is Monday, you can't take your car for a spin because you have pico y placa from 7:00 AM to 9:30 AM and 16:00 PM to 19:30PM"
