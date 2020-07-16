@@ -28,4 +28,5 @@ You will also see any lint errors in the console.
 When an user enters the data the software should preddict if the car can go outside or can't due to pico y placa rules.</br>
 rules: Monday (1-2),Tuesday (3-4), Wednesday (5-6), Thursday(7-8), Friday (9-0) and hours from 7:00 to 9:30 and 16:00 to 19:30.
 
-
+### `Deploy`
+This app is deploy using GitHub pages on this link: https://cazabe.github.io/Pico_y_placa_predictor_react/
